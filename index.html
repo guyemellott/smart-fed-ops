@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <html>
-<head><title>Smart Fed Ops - CSO Preview</title></head>
+<head>
+    <title>Smart Fed Ops - CSO Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-<h1>Welcome, CSO</h1>
-<p>This is your Smart Fed Ops dashboard preview. Login simulation enabled.</p>
+    <h1>Welcome, CSO</h1>
+    <div class="card">Total Vulnerabilities: <span id="vulns">Loading...</span></div>
+    <div class="card">Open POA&Ms: <span id="poams">Loading...</span></div>
+    <div class="card">Escalations Pending: <span id="escalations">Loading...</span></div>
+    <button onclick="exportReport()">Export Executive Brief (PDF)</button>
+    <script src="data.js"></script>
+    <script src="dashboard.js"></script>
 </body>
 </html>

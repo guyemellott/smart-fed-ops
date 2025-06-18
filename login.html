@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Fed Ops - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Smart Fed Ops Login</h1>
+    <form onsubmit="return login(event)">
+        <input type="text" placeholder="Username" id="username" required><br>
+        <input type="password" placeholder="Password" id="password" required><br>
+        <button type="submit">Login</button>
+    </form>
+    <script>
+        function login(event) {
+            event.preventDefault();
+            alert("Login simulated. Redirecting to dashboard...");
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>
